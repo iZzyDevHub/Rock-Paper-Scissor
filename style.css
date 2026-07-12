@@ -87,8 +87,8 @@ button:hover {
 
 button {
     background: transparent;
-    color: #00d4ff;
-    border: 3px solid #00d4ff;
+    color: #525455;
+    border: 3px solid #000000;
     border-radius: 10px;
     padding: 15px 30px;
     font-size: 1.2rem;
@@ -97,13 +97,13 @@ button {
     cursor: pointer;
     transition: all 0.3s ease;
     /* Subtle outer glow */
-    box-shadow: 0 0 10px rgba(0, 212, 255, 0.4), inset 0 0 5px rgba(0, 212, 255, 0.2);
+    box-shadow: 0 0 10px rgba(197, 203, 204, 0.4), inset 0 0 5px rgba(104, 108, 109, 0.2);
 }
 
 button:hover {
-    background: #00d4ff;
+    background: #878b8b;
     color: #000; /* Dark text when background lights up */
-    box-shadow: 0 0 20px #00d4ff, 0 0 40px #00d4ff;
+    box-shadow: 0 0 20px #828485, 0 0 40px #919697;
     transform: translateY(-3px);
 }
 
@@ -122,7 +122,7 @@ h1 {
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 5px;
-    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 42px #00d4ff, 0 0 82px #00d4ff;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 42px #252727, 0 0 82px #252727;
     animation: pulsate 1.5s infinite alternate;
 }
 
