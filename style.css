@@ -108,7 +108,7 @@ button:hover {
 }
 
 body {
-    background-image: url('bg.avif');
+    background-image: url('bg.svg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
