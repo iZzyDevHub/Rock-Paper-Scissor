@@ -34,6 +34,24 @@ function playGame(choice) {
     } else {
         computerChoice = "scissor";
     }
+for (computerChoice || ; i<10; i++){
+
+        if (choice === computerChoice) {
+        result = "It's a tie!";
+    }else if (
+        (choice === "rock" && computerChoice === "scissor") ||
+        (choice === "paper" && computerChoice === "rock") ||
+        (choice === "scissor" && computerChoice === "paper")
+    ) {
+        result = "You win!";
+        playerScore++;
+    } else {
+        result = "Computer wins!";
+        computerScore++;
+    }
+
+}     
+
 
 }
 
