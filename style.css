@@ -7,7 +7,7 @@ body {
     flex-direction: column; /* Stacks Title, Score, and Buttons vertically */
     justify-content: space-between; /* Creates equal space between top, middle, and bottom */
     align-items: center; /* Centers everything horizontally */
-    font-family: 'Arial', sans-serif;
+    font-family: "Inter", sans-serif;
     overflow: hidden;
 }
 
@@ -43,7 +43,7 @@ button:hover {
 }
 
 .score-item p {
-    font-family: 'Arial', sans-serif; /* Or 'Inter', 'Roboto' if you have them */
+    font-family: "Inter", sans-serif; /* Or 'Inter', 'Roboto' if you have them */
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -62,19 +62,20 @@ button:hover {
 .score-item span {
     font-size: 3rem;
     font-weight: 900;
-    color: #00d4ff; /* A bright cyan to pop against the blue */
+    color: #ffffff;
     display: block;
-    text-shadow: 0 0 15px rgba(0, 212, 255, 0.5);
+    text-shadow: 0 0 15px rgba(53, 51, 51, 0.5);
+    padding-left: 10px;
 }
 
-/* Optional: Slight distinction between the two */
+
 .score-item:first-child p {
-    border-left: 4px solid #00d4ff;
+    border-left: 4px solid #ffffff;
     padding-left: 15px;
 }
 
 .score-item:last-child p {
-    border-right: 4px solid #00d4ff;
+    border-right: 4px solid #ffffff;
     padding-right: 15px;
     text-align: right;
 }
@@ -87,8 +88,8 @@ button:hover {
 
 button {
     background: transparent;
-    color: #525455;
-    border: 3px solid #000000;
+    color: #ffffff;
+    border: 3px solid #ebe3e3;
     border-radius: 10px;
     padding: 15px 30px;
     font-size: 1.2rem;
@@ -96,14 +97,13 @@ button {
     text-transform: uppercase;
     cursor: pointer;
     transition: all 0.3s ease;
-    /* Subtle outer glow */
-    box-shadow: 0 0 10px rgba(197, 203, 204, 0.4), inset 0 0 5px rgba(104, 108, 109, 0.2);
+    box-shadow: 0 0 10px rgba(247, 248, 248, 0.4), inset 0 0 5px rgba(104, 108, 109, 0.2);
 }
 
 button:hover {
-    background: #878b8b;
-    color: #000; /* Dark text when background lights up */
-    box-shadow: 0 0 20px #828485, 0 0 40px #919697;
+    background: #ffffff;
+    color: #000;
+    box-shadow: 0 0 20px #cfd2d3, 0 0 40px #919697;
     transform: translateY(-3px);
 }
 
@@ -117,16 +117,11 @@ body {
 }
 
 h1 {
-    font-family: 'Arial', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 3.5rem;
-    color: #fff;
+    color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 5px;
-    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 42px #252727, 0 0 82px #252727;
-    animation: pulsate 1.5s infinite alternate;
-}
-
-@keyframes pulsate {
-    100% { text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 40px #00d4ff, 0 0 80px #00d4ff; }
-    0% { text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 10px #00d4ff, 0 0 45px #00d4ff; }
+    text-shadow: 2px 2px 5px #d8d1d1;
+    backdrop-filter: blur(2px) saturate(1.2);
 }
