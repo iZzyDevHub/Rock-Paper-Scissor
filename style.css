@@ -4,15 +4,18 @@ body {
     height: 100vh;
     background: #0d1b2a;
     display: flex;
-    flex-direction: column; /* Stacks Title, Score, and Buttons vertically */
-    justify-content: space-between; /* Creates equal space between top, middle, and bottom */
-    align-items: center; /* Centers everything horizontally */
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     font-family: "Inter", sans-serif;
     overflow: hidden;
 }
 
 .button-container {
     margin-bottom: 30px;
+    position: absolute;
+    top: 50%;
+    left: 31%;
 }
 
 button {
@@ -33,33 +36,28 @@ button:hover {
 
 .scoreboard {
   display: flex;
-  justify-content: space-between; /* Pushes one to the far left, one to the far right */
+  justify-content: space-between;
   align-items: center;
-  width: 100%; /* Spans the full width of the screen */
-  padding: 0 50px; /* Keeps them from touching the very edge of the screen */
-  position: absolute; /* Allows it to sit over the background */
-  top: 50%; /* Moves it to the middle vertically */
+  width: 100%;
+  padding: 0 50px;
+  position: absolute; 
+  top: 50%;
   transform: translateY(-50%);
 }
 
-.score-item p {
-    font-family: "Inter", sans-serif; /* Or 'Inter', 'Roboto' if you have them */
+.score-item1 p, .score-item2 p {
+    font-family: "Inter", sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 3px;
     color: #ffffff;
     margin-bottom: 10px;
-    
-    /* Subtle neon glow to match the 'Rock Paper Scissors' header */
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3),
-                 0 0 20px rgba(255, 255, 255, 0.2);
-    
-    /* Animation to make it feel alive */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
 }
 
-.score-item span {
+.score-item1 span, .score-item2 span {
     font-size: 3rem;
     font-weight: 900;
     color: #ffffff;
@@ -68,16 +66,31 @@ button:hover {
     padding-left: 10px;
 }
 
-
-.score-item:first-child p {
+.score-item1 p {
     border-left: 4px solid #ffffff;
     padding-left: 15px;
 }
 
-.score-item:last-child p {
+.score-item2 p {
     border-right: 4px solid #ffffff;
     padding-right: 15px;
     text-align: right;
+}
+
+
+/* Container holding the scores */
+.scoreboard {
+    display: flex;
+    justify-content: space-between;
+    width: 80%; /* Adjust this width to spread them out how you like */
+    max-width: 600px;
+    margin: 40px auto 0 auto; /* Pushes it down away from the buttons */
+    text-align: center;
+}
+
+/* Optional styling to keep them clean */
+.player-side, .computer-side {
+    flex: 1;
 }
 
 .button-container {
@@ -108,7 +121,7 @@ button:hover {
 }
 
 body {
-    background-image: url('bg.svg');
+    background-color: #626292;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
