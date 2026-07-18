@@ -29,7 +29,7 @@ scissorBtn.addEventListener("click", function () {
 });
 
 function playGame(choice) {
-    
+
     num = Math.floor(Math.random() * 3);
     if (num === 0) {
         computerChoice = "rock";
@@ -52,5 +52,9 @@ function playGame(choice) {
         result = "Computer wins!";
         computerScore++;
     }
+
+    playerChoiceSpan.textContent = choice;
+    computerChoiceSpan.textContent = computerChoice;
+    resultDiv.textContent = result;
 }
 
