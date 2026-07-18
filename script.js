@@ -49,8 +49,10 @@ function playGame(choice) {
         computerScore++;
     }
 
-}     
-
+    resultDiv.textContent = `Your Choice: ${choice} | Computer's Choice: ${computerChoice} | Result: ${result}`;
+    pScoreDisplay.textContent = playerScore;
+    cScoreDisplay.textContent = computerScore;
+}
 
 playGame();
 
