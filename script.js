@@ -25,6 +25,8 @@ scissorBtn.addEventListener("click", function () {
 });
 
 function playGame(choice) {
+
+    if 
     
     num = Math.floor(Math.random() * 3);
     if (num === 0) {
